@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-ef best_score(a_dictionary):
+def best_score(a_dictionary):
     if a_dictionary is None:
         return "None"
     else:
