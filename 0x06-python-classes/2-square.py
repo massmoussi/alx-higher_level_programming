@@ -2,6 +2,7 @@
 
 """Class Declaration"""
 
+
 class Square:
     """Instantiation"""
     def __init__(self, size=0):
