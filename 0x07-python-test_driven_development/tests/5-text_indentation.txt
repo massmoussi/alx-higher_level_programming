@@ -1,0 +1,30 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello.Younes?Gojo:Good")
+Hello.
+<BLANKLINE>
+Younes?
+<BLANKLINE>
+Gojo:
+<BLANKLINE>
+Good
+
+>>> text_indentation(35)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("\n\nHello.test")
+Hello.
+<BLANKLINE>
+test
+
+>>> text_indentation("      Hello        .          test  ?           Got")
+Hello        .
+<BLANKLINE>
+test  ?
+<BLANKLINE>
+Got

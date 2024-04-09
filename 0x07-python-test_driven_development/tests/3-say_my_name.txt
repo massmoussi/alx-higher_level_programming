@@ -1,0 +1,45 @@
+Basic Tests
+===========
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Younes", "Bousfiha")
+My name is Younes Bousfiha
+
+>>> say_my_name("Younes")
+My name is Younes 
+
+
+InCorrect Types
+===============
+
+>>> say_my_name(13, "Bousfiha")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Younes", 96)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+
+None Test
+=========
+
+>>> say_my_name("Younes", None)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(None, "Bousfiha")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name(None)
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+Empty arguments
+===============
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
