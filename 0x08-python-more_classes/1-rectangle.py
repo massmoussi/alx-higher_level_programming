@@ -2,6 +2,7 @@
 
 """Class Declaration"""
 
+
 class Rectangle:
     """
     a Class with 2 argument width & height
