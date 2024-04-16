@@ -1,0 +1,50 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("side", 10)
+
+>>> obj.integer_validator("length", -5)
+Traceback (most recent call last):
+ValueError: length must be greater than 0
+
+>>> obj.integer_validator("radius", "hello")
+Traceback (most recent call last):
+TypeError: radius must be an integer
+
+>>> obj.integer_validator("length", 0)
+Traceback (most recent call last):
+ValueError: length must be greater than 0
+
+>>> obj.integer_validator("length", [1, 5])
+Traceback (most recent call last):
+TypeError: length must be an integer
+
+>>> obj = BaseGeometry()
+>>> obj.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("age")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("bool", True)
+Traceback (most recent call last):
+TypeError: bool must be an integer
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("testset", {15, -7})
+Traceback (most recent call last):
+TypeError: testset must be an integer
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("some", None)
+Traceback (most recent call last):
+TypeError: some must be an integer
+
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("tup", (10, 22, 33))
+Traceback (most recent call last):
+TypeError: tup must be an integer
