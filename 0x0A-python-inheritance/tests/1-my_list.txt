@@ -1,0 +1,45 @@
+>>> MyList = __import__('1-my_list').MyList
+
+# Test for a simple List
+>>> simplelist = MyList()
+>>> simplelist.append(1)
+>>> simplelist.append(5)
+>>> simplelist.append(4)
+>>> simplelist.append(3)
+>>> simplelist.append(2)
+>>> print(simplelist)
+[1, 5, 4, 3, 2]
+>>> simplelist.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(simplelist)
+[1, 5, 4, 3, 2]
+
+# Test for a Negative list
+>>> n_list = MyList()
+>>> n_list.append(-1)
+>>> n_list.append(-5)
+>>> n_list.append(-4)
+>>> n_list.append(-3)
+>>> n_list.append(-2)
+>>> print(n_list)
+[-1, -5, -4, -3, -2]
+>>> n_list.print_sorted()
+[-5, -4, -3, -2, -1]
+>>> print(n_list)
+[-1, -5, -4, -3, -2]
+
+#Empty List
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
+
+#Check for print
+>>> mylist = MyList()
+>>> mylist.append(20)
+>>> mylist.append(10)
+>>> mylist.append(50)
+>>> mylist.append(30)
+>>> print(mylist)
+[20, 10, 50, 30]
+
+
