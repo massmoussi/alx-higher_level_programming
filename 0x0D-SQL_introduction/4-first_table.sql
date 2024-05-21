@@ -1,0 +1,2 @@
+-- Create a nw tbl with clumns
+CREATE TABLE IF NOT EXISTS first_table (id int, name varchar(256));
