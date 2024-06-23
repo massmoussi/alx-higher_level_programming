@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link clss to tabl in dbs 
+"""Start link clss to table in dbs 
 """
 import sys
 from model_state import Base, State

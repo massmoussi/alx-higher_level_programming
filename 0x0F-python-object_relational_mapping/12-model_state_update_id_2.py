@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-    fetch all state content
-    Using ORM query
+    fetch all stt content
+    Usng ORM query
 """
 
 
