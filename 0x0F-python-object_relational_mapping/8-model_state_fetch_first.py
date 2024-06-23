@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    xxx
+    stt fetch
 """
 
 import sys

@@ -2,9 +2,9 @@
 
 """
     Script Extract All cities
-    within in certain state
+    within in certain stt
     the Script is Using JOIN
-    (args) received from sys.argv
+    (args) received frm sys.argv
 """
 
 

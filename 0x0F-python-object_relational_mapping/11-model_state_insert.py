@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    fetch all state content
+    fetch all stat content
     Using ORM query
 """
 

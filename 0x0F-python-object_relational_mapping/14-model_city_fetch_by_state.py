@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    xxxxx
+   fetch by stt
 """
 
 

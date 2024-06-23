@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-    Python Code Use ORM
+    Pyt Code Use ORM
 """
 
 

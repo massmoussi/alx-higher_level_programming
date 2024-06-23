@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Create a City in a State in certain Database
+    Create a City in a Stt in certain Dbs
 """
 import sys
 from sqlalchemy import create_engine
