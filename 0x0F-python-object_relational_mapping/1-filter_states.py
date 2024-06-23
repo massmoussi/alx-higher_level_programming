@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 """
-List all data(states) from state Table that start
-with 'N' order by the id.
-(args) a gotten from sys.argv without check
+Lst all data(stats) frm stat Tbl that start
+with 'N' ordr by the id.
+(args) a gotten from sys.argv without chck
 """
 
 
@@ -19,16 +19,16 @@ if __name__ == "__main__":
                               host='localhost',
                               port=3306)
 
-    cur = db_conn.cursor()
+    cursr = db_conn.cursor()
 
     query = """SELECT * FROM states WHERE
             name LIKE BINARY 'N%' ORDER BY id ASC"""
-    cur.execute(query)
+    cursr.execute(query)
 
-    results = cur.fetchall()
+    results = cursr.fetchall()
 
     for row in results:
         print(row)
 
-    cur.close()
+    cursr.close()
     db_conn.close()

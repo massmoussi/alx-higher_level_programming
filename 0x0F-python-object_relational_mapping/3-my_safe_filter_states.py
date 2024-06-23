@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 """
-List all data(states) from state Table order
-by the id.
-(args) a gotten from sys.argv without check
+    Script Extract All rw of data(data)
+    frm state Tbl If Exist
+    parameterized queries to prevent SQLi
+    (args) are received frm sys.argv
 """
 
 
@@ -19,9 +20,10 @@ if __name__ == "__main__":
                               host='localhost',
                               port=3306)
 
+    state = sys.argv[4]
     cursr = db_conn.cursor()
-
-    cursr.execute("SELECT * FROM states ORDER BY states.id ASC")
+    query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+    cursr.execute(query, (state,))
 
     results = cursr.fetchall()
 

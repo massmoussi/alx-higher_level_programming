@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 """
-List all data(states) from state Table order
-by the id.
-(args) a gotten from sys.argv without check
+    Script Extract All cities
+    within in certain stat
+    the Script is Using aliasing
+    (args) received frm sys.argv
 """
 
 
@@ -20,8 +21,11 @@ if __name__ == "__main__":
                               port=3306)
 
     cursr = db_conn.cursor()
-
-    cursr.execute("SELECT * FROM states ORDER BY states.id ASC")
+    query = """SELECT c.id, c.name, s.name
+               FROM states AS s, cities AS c
+               WHERE c.state_id = s.id
+               ORDER BY c.id ASC"""
+    cur.execute(query)
 
     results = cursr.fetchall()
 
