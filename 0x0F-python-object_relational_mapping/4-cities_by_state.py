@@ -25,7 +25,7 @@ if __name__ == "__main__":
                FROM states AS s, cities AS c
                WHERE c.state_id = s.id
                ORDER BY c.id ASC"""
-    cur.execute(query)
+    cursr.execute(query)
 
     results = cursr.fetchall()
 
