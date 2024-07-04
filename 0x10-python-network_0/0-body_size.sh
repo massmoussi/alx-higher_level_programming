@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Takes an URL, sends a requst to it, then displays th size of the body
 
 url="$1"
