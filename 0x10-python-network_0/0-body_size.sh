@@ -1,6 +1,4 @@
 #!/bin/bash
-# Takes an URL, sends a requst to it, and dsplys the size of the body
+# Bash Script to display the response size in bytes
 
-url="$1"
-
-curl -s -o /dev/null -w "%{size_download}\n" "$url"
+curl -sI "$1" | grep 'Content-Length' | sed 's/^Content-Length: //'
