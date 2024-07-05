@@ -1,10 +1,18 @@
 #!/usr/bin/python3
 
-""" Functi t find a Peak in List of Intgrs"""
+""" Funct t find a Peak in List of Ints"""
 
 
 def find_peak(list_of_integers):
+    """
+    Find the Peaks within the list of unsorted Integer
 
+    Args:
+        list_of_integers (list): A list of unsorted Integers
+
+    Returns:
+        int or None
+    """
     if not list_of_integers:
         return None
     low = 0
